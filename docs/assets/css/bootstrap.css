@@ -2403,13 +2403,6 @@ button.btn.small, input[type="submit"].btn.small {
   line-height: 1;
   color: #ffffff;
 }
-.navbar .zd-brand {
-  margin-left: 0px;
-  padding: 9px 20px 11px 30px;
-  background: #000000 url('../img/zd-logo-24x24.gif') left center no-repeat;
-  color: #ffffff;
-  font-weight: bold;
-}
 .navbar .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
@@ -3354,6 +3347,22 @@ a.thumbnail:hover {
   font-size: 18px;
   font-weight: 200;
   line-height: 27px;
+}
+.navbar .zd-brand {
+  margin-left: 0px;
+  padding: 9px 20px 11px 30px;
+  background: #000000 url('../img/zd-logo-24x24.gif') left center no-repeat;
+  color: #ffffff;
+  font-weight: bold;
+}
+.zd-brand .ZIFF {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.zd-brand .afterZIFF {
+  text-transform: lowercase;
+  color: #ff0000;
+  font-weight: normal;
 }
 .pull-right {
   float: right;
