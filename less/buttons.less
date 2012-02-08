@@ -121,15 +121,16 @@
 // Set the backgrounds
 // -------------------------
 .btn-primary {
-  .buttonBackground(@primaryButtonBackground, spin(@primaryButtonBackground, 20));
+  .buttonBackground(lighten(@primaryButtonBackground, 30%), @primaryButtonBackground);
 }
+
 // Warning appears are orange
 .btn-warning {
   .buttonBackground(lighten(@orange, 15%), @orange);
 }
 // Danger and error appear as red
 .btn-danger {
-  .buttonBackground(#ee5f5b, #bd362f);
+  .buttonBackground(@red, #bd362f);
 }
 // Success appears as green
 .btn-success {

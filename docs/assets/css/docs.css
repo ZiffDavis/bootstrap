@@ -6,39 +6,23 @@
 */
 
 
-/* Body and structure
--------------------------------------------------- */
+/* Body and structure */
 body {
   position: relative;
-  padding-top: 90px;
+  padding-top: 60px;
   background-color: #fff;
-  background-image: url(../img/grid-18px-masked.png);
-  background-repeat: repeat-x;
-  background-position: 0 40px;
 }
 
+/*.navbar-fixed-top .brand {*/
+    /*color: red;*/
+    /*font-weight: bold;*/
+/*}*/
 
-/* Tweak navbar brand link to be super sleek
--------------------------------------------------- */
-.navbar-fixed-top .brand {
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 20px;
-  float: right;
-  font-weight: bold;
-  color: #000;
-  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-          transition: all .2s linear;
-}
 .navbar-fixed-top .brand:hover {
   text-decoration: none;
 }
 
-
-/* Space out sub-sections more
--------------------------------------------------- */
+/* Space out sub-sections more */
 section {
   padding-top: 60px;
 }
@@ -46,7 +30,7 @@ section {
 /* Faded out hr */
 hr.soften {
   height: 1px;
-  margin: 54px 0;
+  margin: 24px 0;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
@@ -60,24 +44,17 @@ hr.soften {
 .jumbotron {
   position: relative;
 }
+
 .jumbotron h1 {
   margin-bottom: 9px;
-  font-size: 81px;
-  letter-spacing: -1px;
+  font-size: 54px;
+  /*letter-spacing: -1px;*/
   line-height: 1;
 }
+
 .jumbotron p {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-weight: 300;
-}
-.jumbotron .btn-large {
-  font-size: 20px;
-  font-weight: normal;
-  padding: 14px 24px;
-  margin-right: 10px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
 }
 
 /* Masthead (docs home) */
@@ -95,18 +72,18 @@ hr.soften {
 .masthead p {
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 22px;
 }
 
 
-/* Specific jumbotrons
-------------------------- */
+/* Specific jumbotrons */
 /* supporting docs pages */
 .subhead {
   padding-bottom: 0;
   margin-bottom: 9px;
 }
+
 .subhead h1 {
   font-size: 54px;
 }
@@ -133,15 +110,21 @@ hr.soften {
   margin-bottom: 0;
 }
 .subnav .nav > li > a {
-  margin: 0;
-  padding-top:    11px;
-  padding-bottom: 11px;
-  border-left: 1px solid #f5f5f5;
-  border-right: 1px solid #e5e5e5;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
+    margin: 0;
+    padding-top:    11px;
+    padding-bottom: 11px;
+    text-decoration: none;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+            border-radius: 0;
 }
+
+.subnav .nav > li > a:hover {
+    text-decoration: underline;
+}
+
 .subnav .nav > .active > a,
 .subnav .nav > .active > a:hover {
   padding-left: 13px;
@@ -205,8 +188,7 @@ hr.soften {
 }
 
 
-/* Quick links
--------------------------------------------------- */
+/* Quick links */
 .quick-links {
   min-height: 30px;
   padding: 5px 20px;
@@ -228,43 +210,15 @@ hr.soften {
 }
 
 
-/* Marketing section of Overview
--------------------------------------------------- */
-.marketing .row {
-  margin-bottom: 9px;
-}
-.marketing h1 {
-  margin: 36px 0 27px;
-  font-size: 40px;
-  font-weight: 300;
-  text-align: center;
-}
-.marketing h2,
-.marketing h3 {
-  font-weight: 300;
-}
-.marketing h2 {
-  font-size: 22px;
-}
-.marketing p {
-  margin-right: 10px;
-}
-.marketing .bs-icon {
-  float: left;
-  margin: 7px 10px 0 0;
-  opacity: .8;
-}
-.marketing .small-bs-icon {
-  float: left;
-  margin: 4px 5px 0 0;
+/* Marketing section of Overview */
+.marketing h4 {
+    text-align: center;
+    font-weight: normal;
 }
 
-
-
-/* Footer
--------------------------------------------------- */
+/* Footer */
 .footer {
-  margin-top: 45px;
+  margin-top: 24px;
   padding: 35px 0 36px;
   border-top: 1px solid #e5e5e5;
 }
@@ -273,10 +227,7 @@ hr.soften {
   color: #555;
 }
 
-
-
-/* Special grid styles
--------------------------------------------------- */
+/* Special grid styles */
 .show-grid {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -290,20 +241,22 @@ hr.soften {
   min-height: 30px;
   line-height: 30px;
 }
+
 .show-grid:hover [class*="span"] {
   background: #ddd;
 }
+
 .show-grid .show-grid {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .show-grid .show-grid [class*="span"] {
   background-color: #ccc;
 }
 
 
-/* Render mini layout previews
--------------------------------------------------- */
+/* Render mini layout previews */
 .mini-layout {
   border: 1px solid #ddd;
   -webkit-border-radius: 6px;
@@ -345,8 +298,7 @@ hr.soften {
 }
 
 
-/* Popover docs
--------------------------------------------------- */
+/* Popover docs */
 .popover-well {
   min-height: 160px;
 }
@@ -369,8 +321,7 @@ hr.soften {
 }
 
 
-/* Download page
--------------------------------------------------- */
+/* Download page */
 .download .page-header {
   margin-top: 36px;
 }
@@ -762,19 +713,24 @@ form.well {
 
 @media (max-width: 980px) {
 
-  /* Unfloat brand */
-  .navbar-fixed-top .brand {
-    float: left;
-    margin-left: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    /* Unfloat brand */
+    .navbar-fixed-top .brand {
+        float: left;
+        margin-left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-  /* Inline-block quick links for more spacing */
-  .quick-links li {
-    display: inline-block;
-    margin: 5px;
-  }
+    /* but not zd-brand */
+    .navbar-fixed-top .zd-brand {
+        padding-left: 30px;
+    }
+
+    /* Inline-block quick links for more spacing */
+    .quick-links li {
+        display: inline-block;
+        margin: 5px;
+    }
 
 }
 
