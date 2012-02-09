@@ -18,7 +18,7 @@
  * ========================================================== */
 
 
-(function ($){
+!function ($){
 
   "use strict";
 
@@ -27,7 +27,7 @@
 
   var dismiss = '[data-dismiss="alert"]',
       Alert = function (el) {
-        $(el).on('click', dismiss, this.close)
+        $(el).on('click', dismiss, this.close);
       };
 
   Alert.prototype = {
@@ -85,7 +85,7 @@
   * ============== */
 
     $(function () {
-        $('body').on('click.alert.data-api', dismiss, Alert.prototype.close)
+        $('body').on('click.alert.data-api', dismiss, Alert.prototype.close);
     });
 
-})(window.jQuery);
+}(window.jQuery)
